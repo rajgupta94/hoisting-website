@@ -1,0 +1,329 @@
+/* @import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+
+
+
+
+/* ========================================
+   GLOBAL COLOR SYSTEM
+   ======================================== */
+
+:root {
+  /* PRIMARY BACKGROUNDS */
+  --bg-dark: #0a0e27;
+  --bg-darker: #050812;
+  --bg-dark-secondary: #1a1f3a;
+  --bg-dark-tertiary: #252d45;
+
+  /* PRIMARY COLORS - PURPLE & MAGENTA */
+  --primary-purple: #a946d3;
+  --primary-magenta: #d946ef;
+  --primary-pink: #f946d3;
+  --primary-hot-pink: #ff006e;
+
+  /* SECONDARY COLORS - CYAN & BLUE */
+  --secondary-cyan: #00d4ff;
+  --secondary-bright-blue: #0099ff;
+  --secondary-blue: #1f9aff;
+  --secondary-sky-blue: #3fb7ff;
+
+  /* ACCENT COLORS */
+  --accent-teal: #00d9a3;
+  --accent-orange: #ff9500;
+  --accent-red: #ff4757;
+
+  /* TEXT COLORS */
+  --text-primary: #ffffff;
+  --text-secondary: #d0d5e8;
+  --text-tertiary: #8a8fb5;
+  --text-muted: #5a6080;
+
+  /* BORDER & DIVIDER */
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-medium: rgba(255, 255, 255, 0.15);
+  --border-dark: rgba(255, 255, 255, 0.05);
+
+  /* GRADIENT DEFINITIONS */
+  --gradient-purple-magenta: linear-gradient(135deg, #a946d3 0%, #d946ef 100%);
+  --gradient-magenta-pink: linear-gradient(135deg, #d946ef 0%, #f946d3 100%);
+  --gradient-purple-pink: linear-gradient(135deg, #a946d3 0%, #f946d3 100%);
+  --gradient-cyan-blue: linear-gradient(135deg, #00d4ff 0%, #1f9aff 100%);
+  --gradient-purple-cyan: linear-gradient(135deg, #a946d3 0%, #00d4ff 100%);
+  --gradient-vibrant: linear-gradient(135deg, #a946d3 0%, #d946ef 50%, #f946d3 100%);
+  --gradient-cool: linear-gradient(135deg, #00d4ff 0%, #3fb7ff 50%, #0099ff 100%);
+  --gradient-neon: linear-gradient(90deg, #d946ef 0%, #00d4ff 100%);
+
+  /* SHADOW COLORS */
+  --shadow-purple: rgba(169, 70, 211, 0.3);
+  --shadow-magenta: rgba(217, 70, 239, 0.3);
+  --shadow-cyan: rgba(0, 212, 255, 0.2);
+  --shadow-dark: rgba(0, 0, 0, 0.5);
+
+  /* OVERLAY COLORS */
+  --overlay-light: rgba(255, 255, 255, 0.05);
+  --overlay-medium: rgba(0, 0, 0, 0.4);
+  --overlay-dark: rgba(0, 0, 0, 0.7);
+
+  /* SUCCESS, WARNING, ERROR */
+  --success-color: #00d9a3;
+  --warning-color: #ff9500;
+  --error-color: #ff4757;
+  --info-color: #00d4ff;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Background Colors */
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.bg-darker {
+  background-color: var(--bg-darker);
+}
+
+.bg-dark-secondary {
+  background-color: var(--bg-dark-secondary);
+}
+
+/* Text Colors */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-tertiary {
+  color: var(--text-tertiary);
+}
+
+/* Primary Colors */
+.text-purple {
+  color: var(--primary-purple);
+}
+
+.text-magenta {
+  color: var(--primary-magenta);
+}
+
+.text-cyan {
+  color: var(--secondary-cyan);
+}
+
+/* Gradients */
+.gradient-purple-magenta {
+  background: var(--gradient-purple-magenta);
+}
+
+.gradient-magenta-pink {
+  background: var(--gradient-magenta-pink);
+}
+
+.gradient-cyan-blue {
+  background: var(--gradient-cyan-blue);
+}
+
+.gradient-vibrant {
+  background: var(--gradient-vibrant);
+}
+
+.gradient-neon {
+  background: var(--gradient-neon);
+}
+
+/* Text Gradient (for modern browsers) */
+.gradient-text-vibrant {
+  background: var(--gradient-vibrant);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-neon {
+  background: var(--gradient-neon);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ========================================
+   INTERACTIVE ELEMENTS
+   ======================================== */
+
+/* Buttons */
+.btn-primary {
+  background: var(--gradient-purple-magenta);
+  color: var(--text-primary);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px var(--shadow-magenta);
+}
+
+.btn-secondary {
+  background: var(--gradient-cyan-blue);
+  color: var(--text-primary);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px var(--shadow-cyan);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary-magenta);
+  border: 2px solid var(--primary-magenta);
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-outline:hover {
+  background: var(--primary-magenta);
+  color: var(--text-primary);
+}
+
+/* Cards */
+.card {
+  background: var(--bg-dark-secondary);
+  border: 1px solid var(--border-medium);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: var(--bg-dark-tertiary);
+  border-color: var(--primary-magenta);
+  box-shadow: 0 12px 48px var(--shadow-magenta);
+}
+
+.card-gradient {
+  background: var(--bg-dark-secondary);
+  border: 1px solid var(--border-medium);
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-vibrant);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+/* ========================================
+   EFFECTS & ANIMATIONS
+   ======================================== */
+
+/* Glow Effects */
+.glow-purple {
+  box-shadow: 0 0 20px var(--shadow-purple), 0 0 40px rgba(169, 70, 211, 0.2);
+}
+
+.glow-magenta {
+  box-shadow: 0 0 20px var(--shadow-magenta), 0 0 40px rgba(217, 70, 239, 0.2);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px var(--shadow-cyan), 0 0 40px rgba(0, 212, 255, 0.15);
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --text-primary: #ffffff;
+    --text-secondary: #d0d5e8;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ========================================
+   DARK MODE OVERRIDE (if needed)
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-dark: #0a0e27;
+    --bg-darker: #050812;
+  }
+}
