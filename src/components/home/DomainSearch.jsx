@@ -1,4 +1,16 @@
+"use client";
+
+import { useState } from "react";
+
 export default function DomainSearch() {
+  const [isSearching, setIsSearching] = useState(false);
+
+  const handleSearch = () => {
+    setIsSearching(true);
+    // Mock search interaction
+    setTimeout(() => setIsSearching(false), 2000);
+  };
+
   const domains = [
     { tld: ".com", price: "199/Mo" },
     { tld: ".org", price: "179/Mo" },
@@ -33,8 +45,19 @@ export default function DomainSearch() {
                 <path d="M1 1L5 5L9 1" stroke="#333" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
-            <button className="py-2.5 px-8 sm:px-12 rounded-full text-[14px] sm:text-[15px] font-semibold text-white bg-gradient-to-r from-[#ee2a90] to-[#CF088C] shadow-lg shadow-[#CF088C]/30 transition-all hover:opacity-90">
-              Search
+            <button 
+              onClick={handleSearch}
+              disabled={isSearching}
+              className={`py-2.5 px-8 cursor-pointer sm:px-12 rounded-full text-[14px] sm:text-[15px] font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#06B6D4] shadow-lg shadow-[#06B6D4]/30 transition-all hover:opacity-90 disabled:opacity-70 disabled:cursor-not-allowed min-w-[120px] sm:min-w-[170px] flex items-center justify-center gap-2`}
+            >
+              {isSearching ? (
+                <>
+                  <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  Searching...
+                </>
+              ) : (
+                "Search"
+              )}
             </button>
           </div>
 
