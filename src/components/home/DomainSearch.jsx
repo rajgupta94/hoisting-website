@@ -27,8 +27,8 @@ export default function DomainSearch() {
         {/* Left Side: Offer */}
         <div className="text-center lg:text-left flex-1">
           <h2 className="text-[32px] font-bold text-primary mb-3">Get 10% Off Today</h2>
-          <p className="text-[15px] font-light text-secondary mb-1 opacity-90">Grab the holiday offer.This offer will end in 3 days.Hurry Up!</p>
-          <p className="text-[15px] font-light text-secondary opacity-90">Get your perfect domain starting from 149/Mo.</p>
+          <p className="text-[15px] font-light text-secondary mb-1 opacity-90">Grab the holiday offer. This offer ends in 3 days. Hurry Up!</p>
+          <p className="text-[15px] font-light text-secondary opacity-90">Get your perfect domain starting from £12/Mo.</p>
         </div>
 
         {/* Right Side: Search & Pricing */}

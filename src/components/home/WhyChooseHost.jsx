@@ -5,17 +5,17 @@ import Image from "next/image";
 const cards = [
   {
     title: "Loading Speed",
-    description: "Our super-fast network with latest and modern technology ensures accelerated response time and processing along with swift website page loading speed.",
+    description: "Our high-performance infrastructure, powered by the latest technologies, ensures rapid response times, efficient processing, and exceptionally fast website loading speeds for a seamless user experience.",
     icon: "/icons/internet-speed-icon 1.svg"
   },
   {
     title: "Network Security",
-    description: "Our Certified Tier III and Green Data centers in India have the lowest latency with 4 different layers in our Software Defined Network.",
+    description: "Our certified Tier III, eco-efficient data centers in India deliver ultra-low latency, supported by a four-layer Software Defined Network to ensure secure, reliable, and high-performance connectivity.",
     icon: "/icons/cloud-computing-icon 1.svg"
   },
   {
     title: "Hosting Reliability",
-    description: "Equipped with an advanced infrastructure and server architectures together with sufficient resources help create a robust platform that ensures business continuity.",
+    description: "Built on advanced infrastructure and modern server architectures, our platform leverages optimized resources to deliver a resilient environment that ensures seamless business continuity.",
     icon: "/icons/secure-icon 1.svg"
   }
 ];
@@ -27,10 +27,11 @@ export default function WhyChooseHost() {
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-            Why Choose Host.Co.In ?
+            Why Choose HostMeerkat?
           </h2>
           <p className="text-secondary opacity-70 text-[15px] max-w-4xl mx-auto leading-relaxed font-light">
-            With Host.co.in stand apart in the sphere of World Wide Web with maximum flexibility offering elevated packages for all your business needs ensuring smooth execution of your business activities.
+            Stand out in the digital landscape with Hostmeerkat. We offer highly flexible, premium hosting solutions 
+tailored to meet diverse business needs, ensuring seamless performance and uninterrupted execution of your online operations.
           </p>
         </div>
 

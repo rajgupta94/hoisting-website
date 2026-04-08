@@ -42,8 +42,8 @@ export default function Hero() {
           Powered by NVMe SSD & 99.9% Uptime Guarantee
         </div>
 
-        <p className="text-lg text-secondary mb-10 max-w-lg mx-auto lg:mx-0 font-light leading-relaxed">
-          Launch your website in minutes with lightning-fast performance and enterprise-level security.
+        <p className="text-md text-secondary mb-10 max-w-lg mx-auto lg:mx-0 font-light leading-relaxed">
+          Get your website up and running in minutes with high-speed performance and enterprise-grade security.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">

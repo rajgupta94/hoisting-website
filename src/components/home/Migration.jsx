@@ -16,15 +16,15 @@ export default function Migration() {
 
   useEffect(() => {
     // Floating Animation
-    if (imageRef.current) {
-      gsap.to(imageRef.current, {
-        y: -12,
-        duration: 1,
-        repeat: -1,
-        yoyo: true,
-        ease: "sine.inOut",
-      });
-    }
+    // if (imageRef.current) {
+    //   gsap.to(imageRef.current, {
+    //     y: -12,
+    //     duration: 1,
+    //     repeat: -1,
+    //     yoyo: true,
+    //     ease: "sine.inOut",
+    //   });
+    // }
 
     // Running Current Animation (Light pulses along lines)
     gsap.to(".migration-flow-path", {
@@ -62,7 +62,7 @@ export default function Migration() {
             Migration is not an issue with us
           </h2>
           <p className="text-secondary opacity-70 text-[15px] font-light max-w-2xl mx-auto leading-relaxed">
-            We provided free migration service so that our customers can manage their work easily
+            We provide free migration services, enabling our customers to manage their operations smoothly and efficiently
           </p>
         </div>
 
@@ -75,9 +75,7 @@ export default function Migration() {
               Hassle Free Migration
             </h3>
             <p className="text-secondary opacity-70 text-[16px] leading-relaxed mb-10 font-light max-w-xl mx-auto lg:mx-0">
-              Our technical expert team will help you to migrate your site from your 
-              current hosting provider to Host.co.in, You don't have to worry about any 
-              of the migration issues.
+              Our expert technical team will assist in migrating your site from your current hosting provider to HostMeerkat, ensuring a seamless and hassle-free transition.
             </p>
             
             <button className="px-10 py-4 rounded-full font-bold text-white bg-gradient-to-r from-[#3B82F6] to-[#06B6D4] shadow-lg shadow-[#06B6D4]/20 transition-all hover:scale-105 hover:opacity-90">

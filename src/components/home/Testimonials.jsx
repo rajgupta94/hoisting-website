@@ -6,19 +6,19 @@ const testimonials = [
   {
     name: "Mr. Issac Denise",
     image: "/images/Ellipse 6.svg",
-    quote: "Host provides solid value in VPS hosting with great prices that provide the best premium support and excellent up-time in the industry.",
+    quote: "HostMeerkat delivers exceptional value in VPS hosting with competitive pricing, premium support, and outstanding uptime across the industry.",
     rating: 5
   },
   {
     name: "Mr. John Williams",
     image: "/images/Ellipse 6 (1).svg",
-    quote: "Being in education we need an interactive and user friendly online platform for admissions and registrations. Host offered us the complete package.",
+    quote: "Being in education, we require an interactive and user-friendly platform for admissions and registrations. Host provided us the complete solution.",
     rating: 5
   },
   {
     name: "Mr. Paul Conner",
     image: "/images/Ellipse 6 (2).svg",
-    quote: "My company has had a great long standing relationship with Host. Their response time and customer support has been a boon.",
+    quote: "My company has maintained a strong, long-standing relationship with Host. Their prompt response time and customer support have been invaluable.",
     rating: 5
   }
 ];
@@ -33,7 +33,7 @@ export default function Testimonials() {
             What our clients say
           </h2>
           <p className="text-secondary opacity-70 text-[15px] max-w-2xl mx-auto leading-relaxed font-light">
-            Your trusted hosting partner since 2005. Here's what some of our customers say about HOST.CO.IN
+            Your trusted hosting partner since 2005. Here's what some of our customers say about HostMeerkat
           </p>
         </div>
 

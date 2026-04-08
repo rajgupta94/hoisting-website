@@ -59,7 +59,7 @@ export default function GetLive() {
 
               {/* Base Dashed Path - Re-mapped to hit centers */}
               <path
-                d="M166,40 Q333,10 500,40 T833,40"
+                d="M166,40 Q333,-40 500,40 T833,-40"
                 stroke="white"
                 strokeWidth="1"
                 strokeDasharray="8 8"
@@ -68,7 +68,7 @@ export default function GetLive() {
 
               {/* Animated Current Path */}
               <path
-                d="M166,40 Q333,10 500,40 T833,40"
+                d="M166,40 Q333,-40 500,40 T833,-40"
                 stroke="#06B6D4"
                 strokeWidth="2"
                 strokeDasharray="15 25"

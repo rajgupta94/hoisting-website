@@ -1,6 +1,9 @@
 "use client";
 
+import { Badge, BadgeCheck } from "lucide-react";
 import { useState } from "react";
+// import { UiBadge } from "@/components/ui/badge";
+import { Badge as UIBadge } from "@/components/ui/badge";
 
 const plans = [
   {
@@ -100,8 +103,8 @@ export default function Pricing() {
             >
               {plan.mostPopular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                   <span className="bg-white text-[#3B82F6] text-[10px] font-extrabold py-1.5 px-4 rounded-full flex items-center gap-1 shadow-xl whitespace-nowrap">
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
+                   <span className="bg-white text-[#3B82F6] text-[15px] font-medium py-1.5 px-4 rounded-full flex items-center gap-1 shadow-xl whitespace-nowrap">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                       </svg>
                       Most Popular
@@ -125,9 +128,9 @@ export default function Pricing() {
               <ul className="space-y-3.5 mb-8 flex-grow">
                 {plan.features[billingCycle].map((feature, i) => (
                   <li key={i} className="flex items-center gap-2.5">
-                    <svg className={`w-5 h-5 shrink-0 fill-current ${plan.highlighted ? "text-white" : "text-[#3B82F6]"}`} viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="10" fill="currentColor" fillOpacity="0.2" />
-                        <path d="M9 12.5l2 2 4-4" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                    <svg className={`w-5 h-5 shrink-0 fill-current ${plan.highlighted ? "text-[#027df7]" : "text-[#3B82F6]"}`} viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="[#027df7]" />
+                        <path d="M9 12.5l2 2 4-4" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
                     </svg>
                     <span className={`text-[15px] font-light ${plan.highlighted ? "text-white/95" : "text-white/80"}`}>
                       {feature}
@@ -149,6 +152,21 @@ export default function Pricing() {
             </div>
           ))}
         </div>
+        <div className="flex flex-wrap gap-2 justify-center mt-10 gap-8">
+      <UIBadge variant="secondary">
+  <BadgeCheck />
+  30 Day money back guarantee
+</UIBadge>
+<UIBadge variant="secondary">
+  <BadgeCheck />
+  No Setup fees 
+</UIBadge>
+<UIBadge variant="secondary">
+  <BadgeCheck />
+  Cancel anytime
+</UIBadge>
+
+    </div>
       </div>
     </section>
   );

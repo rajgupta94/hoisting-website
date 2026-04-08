@@ -47,7 +47,7 @@ export default function WhyChooseUs() {
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3 leading-tight">
-            What will you get if you join us&nbsp;?
+            What will you get if you join us?
           </h2>
           <p className="text-[15px] text-secondary opacity-75 font-light">
             Get the best hosting service at the price you can afford
