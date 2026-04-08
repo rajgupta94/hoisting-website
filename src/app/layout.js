@@ -1,19 +1,14 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
 export const metadata = {
-  title: "HOSTER | Managed High-Performance Web Hosting",
-  description: "Experience lightning-fast hosting with HOSTER. Enterprise-grade NVMe SSD storage, 99.9% uptime guarantee, and free migrations. India's most reliable hosting provider.",
+  title: "HOSTER Web Hosting | Managed High-Performance Servers",
+  description: "Experience lightning-fast hosting with HOSTER Web Hosting. Enterprise-grade NVMe SSD storage, 99.9% uptime guarantee, and free migrations. India's most reliable hosting provider.",
   keywords: "web hosting, managed hosting, NVMe SSD, fast web hosting, hosting India, free migration, domain registration, HOSTER, dedicated servers",
   authors: [{ name: "HOSTER Team" }],
   creator: "HOSTER",
@@ -55,9 +50,9 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );
 }

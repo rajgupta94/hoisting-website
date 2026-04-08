@@ -13,12 +13,12 @@ export default function Topbar() {
           <span>+44 7709 322226</span>
         </div>
       </div>
-      <div className="flex items-center gap-6">
+      {/* <div className="flex items-center gap-6">
         <a href="#contact" className="flex items-center gap-2 hover:text-primary transition-colors cursor-pointer">
           <Image src="/icons/Vector (2).svg" alt="Support" width={16} height={16} className="opacity-80" />
           <span>Support</span>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }

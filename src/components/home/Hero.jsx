@@ -28,9 +28,11 @@ export default function Hero() {
     <section className="relative w-full max-w-360 mx-auto px-4 sm:px-12 pt-0 pb-16 lg:pb-14 flex flex-col lg:flex-row items-center justify-between gap-12 z-10">
       {/* Left Content */}
       <div className="flex-1 max-w-[800px] text-center lg:text-left z-20 w-full pl-0 lg:pl-4">
-        <h1 className="text-4xl md:text-5xl lg:text-[48px] xl:text-[56px] font-bold text-primary leading-[1.2] mb-8">
+        <h1 className="text-4xl md:text-5xl lg:text-[48px] xl:text-[56px] font-bold text-primary leading-[1.2] lg:leading-[1.1] mb-8">
           <span className="block lg:whitespace-nowrap">Fast, Secure &</span>
-          <span className="block mt-1 sm:mt-2 leading-10">Scalable Web Hosting</span>
+          <span className="block mt-1 sm:mt-2 leading-tight md:leading-10 lg:whitespace-nowrap">
+            Scalable <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3B82F6] to-[#06B6D4]">Web Hosting</span>
+          </span>
         </h1>
 
         <div className="inline-flex items-center gap-2 bg-white/[0.03] border border-white/10 px-4 py-2 text-sm rounded-md text-secondary mb-8">
@@ -90,7 +92,7 @@ export default function Hero() {
         ref={imageRef}
         className="flex-1 w-full max-w-[700px] flex items-center justify-center relative min-h-[400px] sm:min-h-[500px] lg:min-h-[600px] pointer-events-none z-10 mt-10 lg:mt-0"
       >
-        <div className="absolute inset-0 scale-110 sm:scale-125 lg:scale-[1.3] sm:origin-right lg:translate-x-[15%] translate-y-[5%]">
+        <div className="absolute inset-0 scale-100 sm:scale-110 lg:scale-[1.15] sm:origin-right lg:translate-x-[10%] translate-y-[5%]">
           <Image
             src="/images/Banner 1.svg"
             alt="3D Server Isometric View"

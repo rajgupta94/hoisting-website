@@ -1,4 +1,4 @@
-
+/* Cache-busting comment: Font switch to Inter completed */
 @import "tailwindcss";
 
 html {
@@ -9,6 +9,7 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-primary);
   overflow-x: hidden;
+  font-family: var(--font-inter), sans-serif;
 }
 
 :root {

@@ -88,8 +88,8 @@ export default function GetLive() {
                   <Image
                     src={step.icon}
                     alt={step.title}
-                    width={32}
-                    height={32}
+                    width={48}
+                    height={48}
                     className="brightness-200"
                   />
                 </div>
@@ -105,7 +105,7 @@ export default function GetLive() {
           {/* CTA Footer */}
           <div className="mt-20 flex flex-col items-center gap-6">
             <p className="text-white text-2xl font-bold">
-              Starting at just <span className="text-[#06B6D4]">₹125/mo</span>
+              Starting at just <span className="text-[#06B6D4]">£100/yr</span>
             </p>
             <button className="px-12 py-4 rounded-full font-bold text-white bg-gradient-to-r from-[#3B82F6] to-[#06B6D4] shadow-xl shadow-blue-500/20 transition-all hover:scale-105 hover:opacity-90">
               Get Started
