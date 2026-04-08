@@ -1,13 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  // Lock scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isMenuOpen]);
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -72,12 +80,9 @@ export default function Navbar() {
           </Link>
           <button 
             onClick={toggleMenu}
-            className="p-2 text-white/80 hover:text-white transition-colors bg-white/5 rounded-lg border border-white/10"
+            className="flex items-center gap-2 p-2 text-white/70 hover:text-[#06B6D4] transition-colors"
             aria-label="Close Menu"
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M18 6L6 18M6 6l12 12" />
-            </svg>
             <span className="text-xs font-bold uppercase tracking-widest hidden sm:block">Close</span>
             <div className="p-2 bg-white/5 rounded-full border border-white/10">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
