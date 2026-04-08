@@ -31,9 +31,9 @@ export default function Navbar() {
           <Image src="/icons/monkey.png" alt="Monkey" width={28} height={28} className="rounded-full object-cover cursor-pointer" />
           {navLinks.map((link) => (
             link.isNative ? (
-              <a key={link.name} href={link.href} className="hover:text-primary transition-colors cursor-pointer">{link.name}</a>
+              <a key={link.name} href={link.href} className="hover:text-[#06B6D4] transition-colors cursor-pointer">{link.name}</a>
             ) : (
-              <Link key={link.name} href={link.href} className="hover:text-primary transition-colors">{link.name}</Link>
+              <Link key={link.name} href={link.href} className="hover:text-[#06B6D4] transition-colors">{link.name}</Link>
             )
           ))}
         </div>
@@ -66,14 +66,14 @@ export default function Navbar() {
         }`}
         style={{ top: '80px', height: 'calc(100vh - 80px)' }}
       >
-        <div className="flex flex-col items-center justify-start pt-12 gap-8 h-full px-8">
+        <div className="flex flex-col items-center justify-start pt-8 gap-5 h-full px-8">
           {navLinks.map((link) => (
             link.isNative ? (
               <a 
                 key={link.name} 
                 href={link.href} 
                 onClick={toggleMenu}
-                className="text-2xl font-semibold text-white hover:text-[#3B82F6] transition-colors"
+                className="text-base font-semibold text-white hover:text-[#06B6D4] transition-colors"
               >
                 {link.name}
               </a>
@@ -82,14 +82,14 @@ export default function Navbar() {
                 key={link.name} 
                 href={link.href}
                 onClick={toggleMenu}
-                className="text-2xl font-semibold text-white hover:text-[#3B82F6] transition-colors"
+                className="text-base font-semibold text-white hover:text-[#06B6D4] transition-colors"
               >
                 {link.name}
               </Link>
             )
           ))}
           
-          <button className="mt-8 w-full py-4 rounded-xl text-lg font-bold text-white bg-gradient-to-r from-[#3B82F6] to-[#06B6D4] shadow-xl">
+          <button className="mt-4 w-full py-3 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-[#3B82F6] to-[#06B6D4] shadow-xl">
              Client Area
           </button>
         </div>

@@ -6,11 +6,11 @@ export default function Topbar() {
       <div className="flex items-center gap-6 mb-4 sm:mb-0">
         <div className="flex items-center gap-2 hover:text-primary transition-colors cursor-pointer">
           <Image src="/icons/Vector.svg" alt="Mail" width={14} height={14} className="opacity-80" />
-          <span className="text-xs">support@hostmeerkat.co.uk</span>
+          <span className="text-xs hover:text-[#06B6D4]">support@hostmeerkat.co.uk</span>
         </div>
         <div className="flex items-center gap-2 hover:text-primary transition-colors cursor-pointer">
           <Image src="/icons/Vector (1).svg" alt="Phone" width={14} height={14} className="opacity-80" />
-          <span className="text-xs">+44 7709 322226</span>
+          <span className="text-xs hover:text-[#06B6D4]">+44 7709 322226</span>
         </div>
       </div>
       {/* <div className="flex items-center gap-6">
